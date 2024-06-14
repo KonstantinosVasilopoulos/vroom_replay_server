@@ -1,0 +1,93 @@
+.car-info-container {
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0c1017;
+    border-radius: 10px;
+    border: 1px solid #31363c;
+    margin-top: 1rem;
+}
+
+.car-info-title {
+    width: 80%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.car-info-title h1 {
+    /* text-align: left; */
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0.5rem 0 0 0;
+}
+
+.car-info-title-icon {
+    height: 3rem;
+}
+
+.car-info-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.steering-info,
+.yaw-info,
+.speed-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 5rem;
+    border-top: 2px solid #31363c;
+    transition: all 0.2s linear;
+    margin: 0;
+}
+
+.steering-info:hover,
+.yaw-info:hover,
+.speed-info:hover {
+    background-color: #31363c;
+    cursor: pointer;
+}
+
+.steering-info p,
+.yaw-info p,
+.speed-info p {
+    margin: 0 1rem;
+}
+
+.speed-info p {
+    margin: 0 0rem 0rem 1rem;
+}
+.speed-logo-section {
+    width: 10rem;
+    height: 7rem;
+    background: url(../assets/gauge2.png);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    scale: 0.45;
+}
+
+.set-by {
+    font-size: 14px;
+}
+
+.important-color {
+    color: #c568ff;
+    font-weight: 500;
+}

@@ -1,0 +1,131 @@
+.cep-menu-big-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.cep-menu-container {
+    width: 50rem;
+    height: 40rem;
+    background-color: #222222;
+    border: 2px solid #3d3d3d;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-and-exit {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 2px solid #3d3d3d;
+}
+
+.title-and-exit h1 {
+    font-size: x-large;
+}
+
+.close-icon {
+    font-size: 60px;
+}
+
+.close-icon:hover {
+    cursor: pointer;
+    color: #929292;
+}
+
+.cep-menu-content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cep-menu-content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.preferences-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cep-ledger {
+    padding: 1em 2em;
+    background-color: #6c6c6c;
+    border-radius: 10px;
+}
+
+.cep-ledger-info {
+    display: flex;
+    width: 100%;
+}
+
+.info-icon {
+    margin-right: 15px;
+}
+
+.cep-ledger-info p {
+    display: inline;
+    font-size: 1.1em;
+}
+
+.cep-ledger hr {
+    border: 1px solid #222222;
+}
+
+.cep-ledger-ul {
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.cep-ledger-ul li {
+    margin-bottom: 5px;
+}
+
+.car-id-input {
+    min-width: 20em;
+    border: 1px solid #3d3d3d;
+    border-radius: 0 15px 15px 0px;
+    font-size: 18px;
+    height: 2rem;
+}
+.car-id-input:focus {
+    outline: none;
+    border: 1px solid #c568ff;
+}
+
+.datetime-input {
+    min-width: 20em;
+    border: 1px solid #3d3d3d;
+    border-radius: 0 15px 15px 0px;
+    font-size: 18px;
+    height: 2rem;
+}
+.datetime-input:focus {
+    outline: none;
+    border: 1px solid #c568ff;
+}
+
+.error-message {
+    color: #ff0000;
+    position: absolute;
+    bottom: 2rem;
+}

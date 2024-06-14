@@ -1,0 +1,117 @@
+.logs-container {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #0000001a; */
+    backdrop-filter: blur(15px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big-log-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.log-window {
+    z-index: 15000;
+    width: 35rem;
+    height: 35rem;
+    height: fit-content;
+    background-color: #222222;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #3d3d3d;
+}
+
+.close-on-click-away {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000006e;
+}
+
+.close-log-btn {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-log-btn p {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.close-log-btn p:hover {
+    opacity: 0.5;
+}
+
+.log-terminal {
+    background-color: #222222;
+    width: 35rem;
+    height: 30rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.log-entry {
+    margin: 0 0.5rem;
+    padding: 5px 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #383838;
+    border-bottom: 0.5px solid #383838;
+}
+
+.log-entry div {
+    font-size: 16px;
+    margin: 0 0.5rem;
+    color: #ffffff;
+}
+
+.log-title {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.log-indiv {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.log-time {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+.log-indiv > * {
+    margin: 0 0.8rem;
+}

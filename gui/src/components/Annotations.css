@@ -1,0 +1,52 @@
+.annotations-container {
+    position: relative;
+}
+.annotations-ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 2rem;
+    left: -1rem;
+    background-color: #3d3744;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+.annotations-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    color: #fdf7ff;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-left: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    transform: scale(1.5);
+    accent-color: #845ec2;
+}
+
+.annotations-button {
+    font-size: 16px !important;
+    /* font-weight: 700; */
+    color: #fdf7ff;
+    margin: 0;
+    padding: 0.2rem 0;
+}
+
+.annotations-button:hover {
+    cursor: pointer;
+    color: #b78bff;
+}
+
+.annotations-button:hover ~ .annotations-ul {
+    display: flex;
+}
+
+.annotations-ul:hover {
+    display: flex;
+}

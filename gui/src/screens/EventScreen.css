@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "dream_mma";
+    src: url("/src/assets/Neons_demo.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.eventscreen-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #010409;
+    background-image: url("/src/assets/blur-bg.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.eventscreen-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.vroomitor-title {
+    font-family: "dream_mma";
+    font-size: 60px;
+    animation: pulsate 0.11s ease-in-out infinite alternate;
+    color: #ffe6fb;
+    transition: all 0.2s;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.vroomitor-title:hover {
+    animation: flicker 0.11s ease-in-out infinite alternate;
+    cursor: pointer;
+    font-size: 70px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.back-buttons {
+    width: 11rem;
+    margin: 0.5rem 1rem; /* Adds buffer around the button */
+    border: 2px #366CFF solid;
+}
+
+.eventscreen-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0; /* Adjusts spacing between rows */
+}
+
+.eventscreen-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventscreen-menu-buttons {
+    display: grid;
+}
+
+.eventscreen-menu-item-row-1 {
+    grid-row-start: 1;
+    width: 11rem;
+    margin: 0.5rem;
+    border: 2px #366CFF solid;
+}
+
+.eventscreen-menu-item-row-2 {
+    grid-row-start: 2;
+}
+
+.run-start {
+    z-index: 10000;
+    background-color: #010409d6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    animation: popup 0.7s;
+}
+
+.smooth {
+    transition: all 1s;
+    opacity: 1;
+}
+
+.run-start-h1 {
+    color: #fff;
+    font-size: 80px;
+    margin: 0;
+}
+
+.run-start-disable {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    z-index: -1;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Pulsating animation */
+@keyframes pulsate {
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09, 0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+    }
+    0% {
+        text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f09, 0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 140px #f09;
+    }
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #db0104, 0 0 80px #db0104, 0 0 90px #db0104, 0 0 100px #db0104, 0 0 150px #db0104;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}

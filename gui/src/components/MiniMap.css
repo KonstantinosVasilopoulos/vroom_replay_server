@@ -1,0 +1,134 @@
+.minimap-container {
+    width: 30rem;
+    min-width: 30rem;
+    height: 20rem;
+    min-height: 20rem;
+    background-color: rgb(18, 0, 14);
+    margin: 0.5rem;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    position: relative;
+    opacity: 1;
+    transition: all 0.2s;
+    overflow: hidden;
+    flex-direction: column;
+    animation: fadeInComponent 1s;
+    overflow: hidden;
+    border: 1px solid #31363c;
+}
+
+.minimap-image-lab {
+    position: relative;
+    width: 1350px;
+    height: 912px;
+    transition: all 0.2s;
+    border-top: 13rem #1f0223 solid;
+    border-left: 16rem #1f0223 solid;
+}
+
+.minimap-image-comp {
+    position: relative;
+    width: 1450px;
+    height: 966px;
+    transition: all 0.2s;
+    border-top: 13rem #1f0223 solid;
+    border-left: 16rem #1f0223 solid;
+}
+
+.lab-car {
+    top: 48%;
+    left: 48%;
+    position: absolute;
+    width: 50px;
+}
+.comp-car {
+    top: 48%;
+    left: 48%;
+    position: absolute;
+    width: 40px;
+}
+.minimap-node-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.3rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.minimap-node {
+    text-align: center;
+    margin: 0 0.3rem 0 0;
+    width: 5rem;
+    border-radius: 15px;
+    height: 3rem;
+    background-color: #9d35ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px rgb(255, 255, 255) solid; */
+}
+.minimap-node p {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.blinker {
+    position: absolute;
+    width: 3rem;
+    bottom: 0.5rem;
+    left: 48%;
+    background-color: #131313;
+    padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+    border-radius: 15px;
+}
+.blink {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.path-finished-container {
+    position: absolute;
+    margin: 0;
+    width: 15rem;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    height: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.path-finished-container h1 {
+    animation: blinker 1.4s linear infinite;
+    margin: 0;
+    text-align: center;
+    color: #40ff00;
+}
+
+.rb-img {
+    width: 8rem;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}

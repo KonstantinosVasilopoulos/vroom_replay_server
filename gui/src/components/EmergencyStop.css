@@ -1,0 +1,35 @@
+.stop-container {
+    width: 6rem;
+    height: 6rem;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.stop-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 0.1s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.stop-btn:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.stop-btn:active {
+    scale: 0.98;
+}

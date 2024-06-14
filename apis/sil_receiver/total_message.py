@@ -1,0 +1,56 @@
+class TotalMessage:
+    """
+    Class for defining all the messages to be published to the `total` topic of the broker.
+    """
+    timestamp: float = 0.0
+    speed_cm: float = 0.0
+    speed_rpm: float = 0.0
+    speed_source: str = "Initial"
+    cur_steer: float = 0.0
+    steer_source: str = "Initial"
+    yaw: float = 0.0
+    pitch: float = 0.0
+    fps_1_value: float = 0.0
+    fps_1_source: str = "None"
+    fps_2_value: float = 0.0
+    fps_2_source: str = "None"
+    fps_3_value: float = 0.0
+    fps_3_source: str = "None"
+    fps_4_value: float = 0.0
+    fps_4_source: str = "None"
+    fps_5_value: float = 0.0
+    fps_5_source: str = "None"
+    current_state: str = "None"
+    previous_state: str = "None"
+    node: int = -1
+    loc_x: float = 0.0
+    loc_y: float = 0.0
+    gps_x: float = 0.0
+    gps_y: float = 0.0
+    node_x: float = 0.0
+    node_y: float = 0.0
+    finished: bool = False
+    tl1: int = 0
+    tl2: int = 0
+    tl3: int = 0
+    tl4: int = 0
+    intersection_turn: int = 2
+    roundabout_exit: int = -1
+    stream_x: float = -1.0
+    stream_y: float = -1.0
+    stream_id: int = 1
+    stream_name: str = "None"
+    status_start: bool = False
+    status_stop: bool = False
+    status_accel: bool = False
+    status_decel: bool = False
+    status_alert: bool = False
+    status_source: str = "Initial"
+    signs: dict = {}
+    vehicles: dict = {}
+    obstacles: dict = {}
+    pedestrians: dict = {}
+    power: float = 0.0
+    current: float = 0.0
+    gpu: float = 0.0
+    cpu: float = 0.0

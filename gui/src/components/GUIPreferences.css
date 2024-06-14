@@ -1,0 +1,85 @@
+.gui-preferences-big-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.gui-preferences-container {
+    width: 50rem;
+    height: 40rem;
+    background-color: #222222;
+    border: 2px solid #3d3d3d;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-and-exit {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 2px solid #3d3d3d;
+}
+
+.title-and-exit h1 {
+    font-size: x-large;
+}
+
+.close-icon {
+    font-size: 60px;
+}
+
+.close-icon:hover {
+    cursor: pointer;
+    color: #929292;
+}
+
+.gui-preferences-content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.gui-preferences-content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.preferences-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ip-input {
+    border: 1px solid #3d3d3d;
+    border-radius: 0 15px 15px 0px;
+    font-size: 18px;
+    height: 2rem;
+}
+.ip-input:focus {
+    outline: none;
+    border: 1px solid #c568ff;
+}
+
+.error-message {
+    color: #ff0000;
+    position: absolute;
+    bottom: 2rem;
+}
